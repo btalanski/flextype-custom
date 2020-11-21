@@ -1,17 +1,13 @@
-#
-# Goes through all the plugins running composer and npm to install the required dependencies
-#
-# To do
-#
+#!/bin/bash
+set -e
 
-cd ..
 composer install
 
 cd project/plugins/accounts-admin
 composer install
 cd ../../..
 
-cd project/plugins/accl
+cd project/plugins/acl
 composer install
 cd ../../..
 
@@ -38,7 +34,6 @@ gulp
 cd ../../..
 
 cd project/plugins/jquery
-composer install
 npm install
 gulp
 cd ../../..
@@ -62,5 +57,3 @@ cd ../../..
 cd project/themes/noir
 npm install
 gulp
-cd ../../..
-

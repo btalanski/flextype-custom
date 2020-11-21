@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flextype\App\Foundation\Cache;
 
-use Doctrine\Common\Cache\AcpuCache;
+use Doctrine\Common\Cache\ApcuCache;
 
 class ApcuCacheAdapter implements CacheAdapterInterface
 {
@@ -20,6 +20,6 @@ class ApcuCacheAdapter implements CacheAdapterInterface
 
     public function getDriver() : object
     {
-        return new AcpuCache();
+        return new ApcuCache();
     }
 }
