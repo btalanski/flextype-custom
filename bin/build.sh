@@ -5,6 +5,7 @@
 #
 
 cd ..
+composer install
 
 cd project/plugins/accounts-admin
 composer install
