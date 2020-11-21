@@ -6,7 +6,7 @@ namespace Flextype\App\Foundation\Cache;
 
 use Doctrine\Common\Cache\AcpuCache;
 
-class AcpuCacheAdapter implements CacheAdapterInterface
+class ApcuCacheAdapter implements CacheAdapterInterface
 {
     /**
      * Constructor
